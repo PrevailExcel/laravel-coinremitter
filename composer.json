@@ -1,0 +1,48 @@
+{
+    "name": "prevailexcel/laravel-coinremitter", 
+    "description": "A Laravel Package for Coinremitter",
+    "keywords": [
+      "php",
+      "github",
+      "laravel",
+      "Open Source",
+      "payments",
+      "crypto",
+      "subscription",
+      "Coinremitter",
+      "crypto payments",
+      "laravel 6",
+      "laravel 7",
+      "laravel 8",
+      "laravel 9"
+    ],    
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "autoload": {
+      "files": [
+        "utils/helpers/coinremitter.php"
+      ],
+        "psr-4": {
+            "PrevailExcel\\Coinremitter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "PrevailExcel",
+            "email": "prevailexcellent@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1"
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "PrevailExcel\\Coinremitter\\CoinremitterServiceProvider"
+        ],
+        "aliases": {
+          "Coinremitter": "PrevailExcel\\Coinremitter\\Facades\\Coinremitter"
+        }
+      }
+    }
+}
